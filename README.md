@@ -8,3 +8,13 @@ Kotlin, Jetpack Compose
 Koin
 Retrofit + Gson
 Coroutines
+
+app
+  data
+    api         WeatherApi (Retrofit)
+    model       Weather (data class)
+    repository  WeatherRepository (возвращает тестовые данные)
+  di            AppModule (Koin)
+  ui/           WeatherScreen (Compose UI)
+  viewmodel/    WeatherViewModel
+  App.kt        Koin
