@@ -4,17 +4,17 @@
 Проект демонстрирует архитектуру, работу с сетью и UI, а не реальное отображение прогноза.
 
 Стек:
-Kotlin, Jetpack Compose
-Koin
-Retrofit + Gson
+Kotlin, Jetpack Compose,
+Koin,
+Retrofit + Gson,
 Coroutines
 
-app
-  data
-    api         WeatherApi (Retrofit)
-    model       Weather (data class)
-    repository  WeatherRepository (возвращает тестовые данные)
-  di            AppModule (Koin)
-  ui/           WeatherScreen (Compose UI)
-  viewmodel/    WeatherViewModel
-  App.kt        Koin
+data {
+  api - WeatherApi (Retrofit),
+  model - Weather (data class),
+  repository - WeatherRepository (возвращает тестовые данные)
+}
+di - AppModule (Koin),
+ui - WeatherScreen (Compose UI),
+viewmodel - WeatherViewModel,
+App.kt - Koin,
